@@ -6,8 +6,6 @@ $:.unshift lib unless $:.include?(lib)
  
 require 'uberconfig/version'
  
-# https://github.com/schacon/showoff/blob/master/showoff.gemspec
-
 Gem::Specification.new do |s|
   s.name        = "uberconfig"
   s.version     = UberConfig::VERSION
@@ -22,4 +20,6 @@ Gem::Specification.new do |s|
 
   s.files       += %w(LICENSE README.md)
   s.files       += Dir.glob("lib/**/*") 
+
+  s.add_development_dependency "pry"
 end
